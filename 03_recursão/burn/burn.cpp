@@ -10,7 +10,7 @@ void mostrar_floresta(vector<string> mapa) {
         cout << mapa[i] << endl;
 }
 
-bool verificacao(vector<string> &mapa, int l, int c) {
+bool verificacao(vector<string>& mapa, int l, int c) {
     int nl = mapa.size();
     int nc = mapa[0].size();
 
@@ -21,7 +21,7 @@ bool verificacao(vector<string> &mapa, int l, int c) {
     return false;
 }
 
-int queimar(vector<string> &mapa, int l, int c) {
+int queimar(vector<string>& mapa, int l, int c) {
     if(verificacao(mapa, l,c) || mapa[l][c] != '#') {
         return 0;
     }
