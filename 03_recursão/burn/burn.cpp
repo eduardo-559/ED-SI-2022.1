@@ -6,8 +6,8 @@
 using namespace std;
 
 void mostrar_floresta(vector<string> mapa) {
-    for(int i = 0; i < (int) mapa.size(); i++)
-        cout << mapa[i] << endl;
+    for(int elem : mapa)
+        cout << elem << endl;
 }
 
 bool verificacao(vector<string>& mapa, int l, int c) {
