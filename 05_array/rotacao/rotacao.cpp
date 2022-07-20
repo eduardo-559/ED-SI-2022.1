@@ -4,10 +4,8 @@
 using namespace std;
 
 void mostrar(vector<int> lista) {
-    cout << "[ ";
-    for(int i : lista)
-        cout << i;
-    cout << " ]" << endl;
+    for(int elem : lista)
+        cout << elem;
 }
 
 void mover_direita(vector<int>& lista, int rotacao) {
