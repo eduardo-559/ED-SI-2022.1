@@ -6,8 +6,8 @@
 using namespace std;
 
 void mostrar(vector<int> vet) {
-    for(auto i : vet)
-        cout << i << ' ';
+    for(auto elem : vet)
+        cout << elem;
 }
 
 void inverter(vector<int> vet) {
