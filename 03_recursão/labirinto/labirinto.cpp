@@ -4,9 +4,9 @@
 
 using namespace std;
 
-void show(vector<string> labirinto) {
-    for(auto linha : labirinto){
-        cout << linha << endl;
+void mostrar(vector<string> labirinto) {
+    for(auto elem : labirinto){
+        cout << elem << endl;
     }
 }
 
@@ -21,7 +21,7 @@ void andar(vector<string>& labirinto, int nl, int nc) {
         return;
 
     labirinto[nl][nc] = '.';
-    show(labirinto);
+    mostrar(labirinto);
     getchar();
 
     andar(labirinto, nl, nc - 1);
@@ -43,7 +43,7 @@ int main(){
         labirinto.push_back(linha);
     }
     
-    show(labirinto);
+    mostrar(labirinto);
 
     cout << "Linha: ";
     cin >> li;
