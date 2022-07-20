@@ -5,12 +5,8 @@
 using namespace std;
 
 void mostrar(vector<int> vet) {
-    cout << "[";
-
-    for(auto i : vet)
-        cout << i;
-
-    cout << "]" << endl;
+    for(auto elem : vet)
+        cout << elem;
 }
 
 void calcular(vector<int> vet) {
